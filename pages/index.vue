@@ -1,11 +1,17 @@
 <template>
-  <main class="home-page bg-brand-green">
-    <section class="hp-cover w-full md:h-screen flex items-center justify-center flex-col bg-scroll md:bg-fixed bg-brand-black relative pt-40 pb-20" style="background-image: url('/images/products/pc_plasticna_cisterna_5_800.webp');">
-      <h1 class="text-white text-center"><span class="block mb-2 text-[1.5em]">{{ actionWord }}</span> proizvodi od plastike</h1>
-      <h2 class="mt-5 text-white uppercase">Delmont 014</h2>
-      <div class="flex flex-wrap gap-3 justify-center items-center py-5 px-3">
-        <NuxtLink to="/proizvodi" class="btn-1 !m-0" active-class="" exact-active-class="">Katalog proizvoda</NuxtLink>
-        <a href="/#kontakt" class="btn-1 !m-0">Kontakt</a>
+  <main class="home-page bg-brand-yellow">
+    <section class="hp-cover w-full md:h-screen flex items-center justify-center flex-col bg-scroll md:bg-fixed bg-brand-black relative px-3 pt-40 pb-20">
+      <h1 class="text-white text-center"><span class="block mb-2 text-[1.5em]">Smart home</span> solarni paneli - video nadzor - elektricne instalacije</h1>
+      <h3>Ugradnja i odrzavanje</h3>
+      <h2 class="mt-5 text-white uppercase mb-3">Delmont 014</h2>
+      <div class="flex flex-wrap gap-3 justify-center items-center py-3 px-3">
+        <a href="tel:+381631871034" class="btn-1 !m-0">Pozovi</a>
+        <a href="/#kontakt" class="btn-1 !m-0">Posalji poruku</a>
+      </div>
+      <div class="flex flex-wrap gap-3 justify-center items-center px-3">
+        <NuxtLink to="/proizvodi" class="btn-1 !m-0" active-class="" exact-active-class="">Smart home</NuxtLink>
+        <NuxtLink to="/proizvodi" class="btn-1 !m-0" active-class="" exact-active-class="">Solarni paneli</NuxtLink>
+        <NuxtLink to="/proizvodi" class="btn-1 !m-0" active-class="" exact-active-class="">Video nadzor</NuxtLink>
       </div>
       <Icon @click="scrollToNextSection()" name="solar:round-arrow-down-bold" class="absolute bottom-5 text-white text-5xl animate-bounce cursor-pointer"><span class="sr-only text-white">Skroluj na dole do sledeće sekcije</span></Icon>
     </section>
@@ -34,9 +40,7 @@
       </div>
     </section>
 
-    <TopProds />
-
-    <section class="black-text-box bg-brand-black text-brand-yellow p-[5%] flex gap-x-5 flex-col lg:flex-row text-center lg:text-left bg-scroll md:bg-fixed" :style="BTPCoverBackgroundStyles">
+    <section class="black-text-box bg-brand-black text-brand-orange p-[5%] flex gap-x-5 flex-col lg:flex-row text-center lg:text-left bg-scroll md:bg-fixed" :style="BTPCoverBackgroundStyles">
       <div class="flex flex-wrap gap-y-5 flex-col w-full lg:w-1/2 lg:flex-row justify-center">
         <article class="w-full">
           <h2 class="mb-3">Visok kvalitet</h2>
@@ -66,29 +70,10 @@ const BTPCoverBackgroundStyles = computed(() => {
   return { backgroundImage: `url('${imgUrl}')` }
 })
 
-const actionWord = ref('Povoljni');
-
-let intervalId;
-
-const changeTitle = () => {
-  intervalId = setInterval(() => {
-    const actions = ['Povoljni', 'Kvalitetni', 'Dugotrajni', 'Ekološki'];
-    actionWord.value = nextElementInList(actions, actionWord.value);
-  }, 2000);
-};
-
 useHead({
   link: [
     { rel: 'preload', fetchpriority: 'high', as: 'image', href: '/images/products/pc_plasticna_cisterna_5_800.webp' },
   ],
-});
-
-onMounted(() => {
-  changeTitle();
-});
-
-onUnmounted(() => {
-  clearInterval(intervalId);
 });
 
 const scrollToNextSection = () => {

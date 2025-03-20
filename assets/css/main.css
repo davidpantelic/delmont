@@ -12,12 +12,12 @@ html {
 }
 
 body {
-  font-family: "SUSE", sans-serif;
+  font-family: "Afacad Flux", sans-serif;
   font-optical-sizing: auto;
 }
 
 main:not(.home-page) {
-  @apply min-h-screen bg-brand-green text-brand-black pt-32
+  @apply min-h-screen bg-brand-orange text-brand-black pt-32
 }
 
 h1 {
@@ -46,11 +46,11 @@ a {
 }
 
 .btn-1 {
-  @apply bg-brand-yellow text-brand-black border-brand-yellow hover:bg-brand-black hover:text-brand-yellow;
+  @apply bg-white text-brand-black border-white hover:bg-brand-black hover:text-brand-orange;
 }
 
 .btn-2 {
-  @apply bg-brand-black text-brand-yellow border-brand-black hover:bg-brand-yellow hover:text-brand-black;
+  @apply bg-brand-black text-brand-orange border-brand-black hover:bg-brand-orange hover:text-brand-black;
 }
 
 header nav,
@@ -58,8 +58,12 @@ header nav a {
   @apply transition-all;
 }
 
+header nav button img {
+  filter: drop-shadow(0 0 4px #fff);
+}
+
 ul.nav-tabs a.router-link-exact-active {
-  color: #fff8dc;
+  @apply text-brand-orange;
 }
 ul.nav-tabs a.router-link-exact-active:after {
   width: 100%;
@@ -70,7 +74,7 @@ ul.nav-tabs a:after {
   display: block;
   width: 0;
   height: 2px;
-  background: #fff8dc;
+  background: #e07b17;
   transition: width 0.3s;
 }
 
@@ -80,7 +84,7 @@ ul.nav-tabs a:hover:after {
 
 .skip-content-link {
   background: #acbc90;
-  color: #081107;
+  color: #1a1a1a;
   height: 30px;
   left: 30%;
   padding: 8px;
@@ -119,12 +123,11 @@ button.navbar-toggler:focus:not(:focus-visible) {
 /* burger animation end */
 
 .hp-cover {
-  /* background-image: url("@/assets/images/products/pc_plasticna_cisterna_5.webp"); */
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url('/images/struja_7.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
-  border-radius: 0 0 50px 50px;
 }
 
 .prod-desc > * {
@@ -150,7 +153,7 @@ button.navbar-toggler:focus:not(:focus-visible) {
 }
 
 .ada-form :is(input, select, textarea) {
-  @apply text-black bg-brand-yellow rounded-md mb-3 p-2 block w-full mt-1 border-2 border-brand-black;
+  @apply text-black bg-white rounded-md mb-3 p-2 block w-full mt-1 border-2 border-brand-black;
 }
 
 /* Change autocomplete styles in WebKit */
@@ -163,11 +166,11 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border: 2px solid #081107;
-  -webkit-text-fill-color: #081107;
-  -webkit-box-shadow: 0 0 0px 1000px #FFF8DC inset;
+  border: 2px solid #1a1a1a;
+  -webkit-text-fill-color: #1a1a1a;
+  -webkit-box-shadow: 0 0 0px 1000px #E07B17 inset;
   transition: background-color 5000s ease-in-out 0s;
-  caret-color: #081107;
+  caret-color: #1a1a1a;
 };
 
 .ada-form textarea {

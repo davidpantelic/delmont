@@ -1,20 +1,17 @@
 <template>
   <footer>
-    <div class="bg-brand-black text-brand-yellow w-full flex flex-wrap gap-5 justify-center items-center p-5 text-center">
-      <UTooltip text="Ovaj veb-sajt je pristupačan svima." class="w-20 order-2">
-        <NuxtImg class="w-20 h-20" src="/accessibility_icon_yellow.png" alt="Pristupačnost bedž" />
-      </UTooltip>
-      <div class="w-full md:w-auto md:order-2 order-1">
-        <p>Copyright &copy; {{ getCurrentYear }} Delmont 014. Sva prava zadržana.</p>
-        <div class="flex flex-wrap gap-3 justify-center items-center">
-          <p><NuxtLink to="/proizvodi" class="hover:underline">Proizvodi</NuxtLink></p>
-          <p><NuxtLink to="/o-nama" class="hover:underline">O nama</NuxtLink></p>
-          <p><NuxtLink to="/politika-privatnosti" class="hover:underline">Politika privatnosti</NuxtLink></p>
-        </div>
-        <p>Izrada veb-sajtova - <a href="mailto:dpdavid156@gmail.com" class="hover:underline">Webdak</a></p>
+    <div class="bg-brand-black text-brand-orange w-full p-5 text-center">
+      <p>Copyright &copy; {{ getCurrentYear }} Delmont 014. Sva prava zadržana.</p>
+      <div class="flex flex-wrap gap-3 justify-center items-center">
+        <p><NuxtLink to="/proizvodi" class="hover:underline">Smart home</NuxtLink></p>
+        <p><NuxtLink to="/proizvodi" class="hover:underline">Solarni paneli</NuxtLink></p>
+        <p><NuxtLink to="/proizvodi" class="hover:underline">Video nadzor</NuxtLink></p>
+        <p><NuxtLink to="/proizvodi" class="hover:underline">Elektro instalacije</NuxtLink></p>
+        <p><NuxtLink to="/o-nama" class="hover:underline">O nama</NuxtLink></p>
+        <p><NuxtLink to="/politika-privatnosti" class="hover:underline">Politika privatnosti</NuxtLink></p>
       </div>
-      <UTooltip text="Webdak Izrada veb-sajtova" class="w-20 rounded-full hover:rotate-6 transition-all order-3">
-        <NuxtImg class="w-20 h-20" src="/webdak_logo_small.png" alt="Webdak Moderna Web Rešenja" />
+      <UTooltip text="Ovaj veb-sajt je pristupačan svima." class="w-20 mt-6">
+        <NuxtImg class="w-20 h-20" src="/accessibility_icon_yellow.png" alt="Pristupačnost bedž" />
       </UTooltip>
     </div>
   </footer>

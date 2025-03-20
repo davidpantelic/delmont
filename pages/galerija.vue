@@ -5,7 +5,7 @@
       <p>Pogledajte slike naših proizvoda, njihove izrade i montaže.</p>
       <p>Izrada po meri i prevoz na vašu adresu.</p>
       <div class="flex flex-wrap gap-3 justify-center py-5">
-        <a href="tel:+381654441560" class="btn-2 block w-fit">Poziv</a>
+        <a href="tel:+381631871034" class="btn-2 block w-fit">Poziv</a>
         <a href="mailto:info@panic-plast.rs" class="btn-2 block w-fit">Email</a>
       </div>
     </section>

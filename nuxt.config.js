@@ -100,7 +100,7 @@ export default {
   },
   googleFonts: {
     families: {
-      SUSE: [100, 200, 300, 400, 500, 600, 700, 800],
+      "Afacad Flux": [100, 200, 300, 400, 500, 600, 700, 800],
     },
     display: 'swap',
     prefetch: true,
@@ -132,15 +132,12 @@ export default {
       theme: {
         extend: {
           fontFamily: {
-            suse: ['SUSE', 'sans-serif']
+            alata: ['Afacad Flux', 'sans-serif']
           },
           colors: {
-            'brand-black': '#081107',
-            'brand-grey-1': '#4A4A4A',
-            'brand-grey-2': '#D3D3D3',
-            // 'brand-green': '#4CAF50',
-            'brand-green': '#acbc90',
-            'brand-yellow': '#FFF8DC'
+            'brand-black': '#1a1a1a',
+            'brand-yellow': '#ffe787',
+            'brand-orange': '#e07b17',
           },
           transitionDuration: {
             DEFAULT: '500ms'

@@ -6,7 +6,7 @@
       <br>
       <p>Za više informacija kontaktirajte nas:</p>
       <div class="flex flex-wrap gap-3 justify-center py-5">
-        <a href="tel:+381654441560" class="btn-2 block w-fit">Poziv</a>
+        <a href="tel:+381631871034" class="btn-2 block w-fit">Poziv</a>
         <NuxtLink to="/proizvodi" class="btn-2 block w-fit">Svi proizvodi</NuxtLink>
       </div>
     </section>
