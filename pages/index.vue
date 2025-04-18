@@ -17,7 +17,7 @@
     </section>
 
     <section id="main-content" class="bg-brand-black lg:px-5 lg:py-10 flex flex-col lg:flex-row">
-      <NuxtImg src="public/images/struja_12.webp" alt="" class="w-full lg:w-1/3 object-cover rounded" />
+      <img src="public/images/struja_12.webp" alt="" class="w-full lg:w-1/3 object-cover rounded" />
       <article class="max-w-[1400px] mx-auto py-5 px-5 lg:px-10 text-center lg:text-left">
         <h1>Pouzdana rešenja za modernu elektrifikaciju i automatizaciju</h1>
         <h2 class="my-5">Ugradnja i održavanje električnih i elektronskih sistema – sigurnost, ušteda i komfor na dohvat ruke</h2>
@@ -29,7 +29,7 @@
     </section>
 
     <section class="bg-brand-black lg:px-5 lg:py-10 flex flex-col lg:flex-row-reverse">
-      <NuxtImg src="../public/images/struja_11.webp" alt="" class="w-full lg:w-1/3 object-cover rounded" />
+      <img src="public/images/struja_11.webp" alt="" class="w-full lg:w-1/3 object-cover rounded" />
       <article class="max-w-[1400px] mx-auto py-5 px-5 lg:px-10 text-center lg:text-right">
         <h1>Tehnologija u službi vašeg doma i poslovnog prostora</h1>
         <h2 class="my-5">Integrisana rešenja za uštedu energije, sigurnost i automatizaciju</h2>
