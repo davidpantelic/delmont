@@ -24,6 +24,7 @@ export default {
       '2xl': 1536
     },
   },
+  // DEPRECATED BECAUSE OF THE GTM BELOW
   // gtag: {
   //   tags: [
   //     {
@@ -32,8 +33,9 @@ export default {
   //     'G-ZGHPBWE0JV',
   //   ],
   // },
+  // DEPRECATED BECAUSE OF THE GTM BELOW
   gtm: {
-    id: 'GTM-W4SRZ2ZZ',
+    id: 'GTM-MVZBFXWV',
     defer: true,
   },
   app: {
@@ -46,10 +48,11 @@ export default {
         { property: 'og:image', content: '/social_share.jpg' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: '%pageTitle %separator %siteName' },
-        { name: 'twitter:description', content: 'Plastični rezervoari, plastične septičke jame, plastični pontoni, plastične kace, plastične cevi. Za domaćinstva i proizvodnje. Kvalitetno, povoljno, dugotrajno i ekološki ispravno.' },
+        { name: 'twitter:description', content: 'Projektovanje, ugradnja i održavanje savremenih električnih i elektronskih sistema.' },
         { name: 'twitter:image', content: '/social_share.jpg' },
         { name: 'msapplication-TileColor', content: '#081107' },
         { name: 'theme-color', content: '#081107' },
+        { name: 'robots', content: 'noindex, nofollow' },
       ],
       link: [
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
@@ -64,30 +67,28 @@ export default {
     },
   },
   site: {
-    url: 'https://panic-plast.rs',
+    url: 'https://delmont014.rs',
     name: 'Delmont 014',
-    description: 'Plastični rezervoari, plastične septičke jame, plastični pontoni, plastične kace, plastične cevi. Za domaćinstva i proizvodnje. Kvalitetno, povoljno, dugotrajno i ekološki ispravno.',
+    description: 'Projektovanje, ugradnja i održavanje savremenih električnih i elektronskih sistema.',
     defaultLocale: 'sr',
   },
   sitemap: {
-    xslColumns: [
-      { label: 'URL', width: '50%' },
-      { label: 'Last Modified', select: 'sitemap:lastmod', width: '12.5%' },
-      { label: 'Priority', select: 'sitemap:priority', width: '12.5%' },
-      { label: 'Change Frequency', select: 'sitemap:changefreq', width: '12.5%' },
-      { label: 'Hreflangs', select: 'count(xhtml:link)', width: '12.5%' },
-    ]
+    // xslColumns: [
+    //   { label: 'URL', width: '50%' },
+    //   { label: 'Last Modified', select: 'sitemap:lastmod', width: '12.5%' },
+    //   { label: 'Priority', select: 'sitemap:priority', width: '12.5%' },
+    //   { label: 'Change Frequency', select: 'sitemap:changefreq', width: '12.5%' },
+    //   { label: 'Hreflangs', select: 'count(xhtml:link)', width: '12.5%' },
+    // ],
+    enabled: false
   },
   schemaOrg: {
     identity: {
       type: 'Company',
       name: 'Delmont 014',
-      url: 'https://panic-plast.rs',
-      logo: 'https://panic-plast.rs/panic_plast_logo.png'
+      url: 'https://delmont014.rs',
+      logo: 'https://delmont014.rs/delmont_logo.png'
     }
-  },
-  sitemap: {
-    enabled: false
   },
   // seo: {
   //   redirectToCanonicalSiteUrl: false
@@ -113,12 +114,12 @@ export default {
     mailgunDomain: process.env.MAILGUN_DOMAIN,
     
     // Public keys (accessible on both server and client if necessary)
-    public: {
-      googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
-      // metapixel: {
-      //   default: { id: process.env.FACEBOOK_PIXEL_CODE, pageView: '/' },
-      // }
-    },
+    // public: {
+    //   googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
+    //   // metapixel: {
+    //   //   default: { id: process.env.FACEBOOK_PIXEL_CODE, pageView: '/' },
+    //   // }
+    // },
   },
   postcss: {
     plugins: {
@@ -161,7 +162,7 @@ export default {
     '@nuxt/image',
     'nuxt-vitalizer',
     // 'nuxt-mail',
-    'nuxt-gtag',
+    // 'nuxt-gtag',
     '@nuxtjs/seo',
     // 'nuxt-meta-pixel'
     '@nuxtjs/google-fonts',

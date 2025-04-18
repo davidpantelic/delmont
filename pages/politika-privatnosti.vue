@@ -3,10 +3,10 @@
     <section class="text-center max-w-5xl mx-auto px-5">
       <h1>Politika privatnosti</h1>
       <br>
-      <h2>Marko Panić PR <br> Proizvodnja ploča, listova, cevi i profila od plastike <br> Delmont 014 Osečina</h2>
-      <p><a href="https://maps.app.goo.gl/S8mzyqiAnDoXDYcHA" target="_blank" class="hover:underline"><span class="sr-only">Lokacija na Google Maps </span>Dragijevica bb, 14253 Osečina, Srbija<span class="sr-only"> - otvara se u novom tabu</span></a></p>
-      <p>Matični broj: 67674944</p>
-      <p>PIB: 114560658</p>
+      <h2>Jovana Radović PR Delmont 014<br> Postavljanje električnih instalacija</h2>
+      <p><a href="https://maps.app.goo.gl/S8mzyqiAnDoXDYcHA" target="_blank" class="hover:underline"><span class="sr-only">Lokacija na Google Maps </span>Vojvode Misića 4a, 14000 Valjevo, Srbija<span class="sr-only"> - otvara se u novom tabu</span></a></p>
+      <p>Matični broj: 67864948</p>
+      <p>PIB: 114800881</p>
       <br>
       <p>Vaša privatnost nam je veoma važna. Ova Politika Privatnosti opisuje kako prikupljamo, koristimo i štitimo informacije koje nam dostavite putem kontakt forme na našem sajtu i informacije koje obradju servisi trećih lica.</p>
       <ol class="list-decimal text-left w-fit mx-auto">
@@ -61,9 +61,9 @@
       </ol>
       <div class="flex flex-wrap gap-3 justify-center py-5">
         <a href="tel:+381631871034" class="btn-2 block w-fit">Poziv</a>
-        <a href="mailto:info@panic-plast.rs" class="btn-2 block w-fit">Email</a>
+        <a href="mailto:info@delmont014.rs" class="btn-2 block w-fit">Email</a>
       </div>
-      <p>Datum donošenja i stupanja na snagu Politike privatnosti: 27.10.2024.</p>
+      <p>Datum donošenja i stupanja na snagu Politike privatnosti: 17.04.2025.</p>
     </section>
   </main>
 </template>

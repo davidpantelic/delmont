@@ -32,9 +32,9 @@ export default defineEventHandler(async (event) => {
   const emailData = new URLSearchParams();
   // emailData.append('from', `Contact Form <postmaster@${MAILGUN_DOMAIN}>`);
   emailData.append('from', `${name} ${email}`);
-  emailData.append('to', 'info@panic-plast.rs');
+  emailData.append('to', 'info@delmont014.rs');
   emailData.append('h:Reply-To', email);
-  emailData.append('subject', `panic-plast.rs: ${name}`);
+  emailData.append('subject', `delmont014.rs: ${name}`);
   emailData.append('text', messageLet);
 
   try {

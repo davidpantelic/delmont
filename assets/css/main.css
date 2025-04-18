@@ -17,7 +17,16 @@ body {
 }
 
 main:not(.home-page) {
-  @apply min-h-screen bg-brand-orange text-brand-black pt-32
+  @apply min-h-screen bg-white text-brand-black pt-32
+}
+
+main:not(.home-page) :is(h2, h3) {
+  margin-top: 20px;
+}
+
+li::marker {
+  font-weight: 700;
+  font-size: 1.3em;
 }
 
 h1 {
@@ -42,7 +51,7 @@ a {
 }
 
 [class^="btn-"] {
-  @apply py-2 px-8 rounded transition-all duration-300 border-2 text-xl;
+  @apply py-2 px-8 rounded transition-all duration-300 border-2 text-xl inline-block;
 }
 
 .btn-1 {
@@ -123,7 +132,7 @@ button.navbar-toggler:focus:not(:focus-visible) {
 /* burger animation end */
 
 .hp-cover {
-  background-image: url('/images/struja_7.jpg');
+  background-image: url('/images/cover.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -135,7 +144,6 @@ button.navbar-toggler:focus:not(:focus-visible) {
 }
 
 .black-text-box {
-  /* background-image: url("@/assets/images/products/pvr_plasticni_vertikalni_rezervoari_4.webp"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -148,7 +156,7 @@ button.navbar-toggler:focus:not(:focus-visible) {
   @apply mb-1 text-base sm:text-lg lg:text-xl my-1;
 }
 
-.ada-form label span {
+.ada-form label span:nth-child(2) {
   @apply text-red-900;
 }
 
@@ -168,7 +176,7 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border: 2px solid #1a1a1a;
   -webkit-text-fill-color: #1a1a1a;
-  -webkit-box-shadow: 0 0 0px 1000px #E07B17 inset;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
   caret-color: #1a1a1a;
 };
@@ -194,3 +202,8 @@ select:-webkit-autofill:focus {
   aspect-ratio: 1/1;
 }
 /* Single product page end */
+
+.black-overlay {
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+  background-color: #000;
+}

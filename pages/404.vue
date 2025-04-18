@@ -5,6 +5,3 @@
     <p>Ova stranica ne postoji.</p>
   </main>
 </template>
-
-<script setup>
-</script>

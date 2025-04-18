@@ -1,19 +1,19 @@
 <template>
   <a href="#main-content" class="skip-content-link">Preskoči do glavnog dela</a>
   <header>
-    <nav :class="[isScrolling ? 'py-4' : 'py-5 bg-opacity-90']" class="bg-brand-black text-white fixed top-0 w-full flex justify-end px-2 md:px-6 lg:px-10 z-50">
+    <nav :class="[isScrolling ? 'py-4' : 'py-5']" class="bg-brand-black text-white fixed top-0 w-full flex justify-end pl-2 md:pl-4 lg:pl-6 pr-2 z-50">
 
       <button @click="homepageTop" class="absolute h-24 sm:h-32 top-2 left-3 hover:scale-105 z-10 transition-all">
         <NuxtImg src="/logo_small_trans_delmont.png" alt="Delmont 014" :class="[isScrolling ? 'scale-90' : 'scale-100']" class="inline mr-3 transition-all h-28 sm:h-32 origin-top" />
       </button>
 
-      <ul class="nav-tabs items-center gap-5 hidden lg:flex mr-5">
+      <ul class="nav-tabs items-center gap-3 xl:gap-5 hidden lg:flex mr-3">
         <li v-for="tab in navTabs" :key="tab.name">
-          <NuxtLink :to="tab.path" class="text-xl hover:text-brand-orange">{{ tab.name }}</NuxtLink>
+          <NuxtLink :to="tab.path" class="text-md xl:text-xl hover:text-brand-orange">{{ tab.name }}</NuxtLink>
         </li>
-        <li>
+        <!-- <li>
           <a href="/#kontakt" class="text-xl hover:text-brand-orange">Kontakt</a>
-        </li>
+        </li> -->
       </ul>
 
       <SocialIcons />
@@ -28,7 +28,7 @@
       </button>
 
       <div class="overflow-hidden absolute top-full left-0 right-0 pointer-events-none">
-        <ul :class="{ 'bg-opacity-90': !isScrolling, [!isBurgerOpen ? 'translate-y-[-100%]' : 'translate-y-0']: true }" class="nav-tabs flex flex-col lg:hidden px-6 pb-2 items-end gap-3 bg-brand-black transition-all pointer-events-auto" :aria-hidden="!isBurgerOpen">
+        <ul :class="{ 'bg-opacity-90': !isScrolling, [!isBurgerOpen ? 'translate-y-[-100%]' : 'translate-y-0']: true }" class="nav-tabs flex flex-col lg:hidden px-6 pb-2 items-end gap-3 bg-brand-black transition-all pointer-events-auto rounded-b-lg" :aria-hidden="!isBurgerOpen">
           <li v-for="tab in navTabs" :key="tab.name">
             <NuxtLink :to="tab.path" class="text-xl hover:text-brand-orange" :tabindex="isBurgerOpen ? 0 : -1" @click="toggleBurger">{{ tab.name }}</NuxtLink>
           </li>
@@ -49,16 +49,28 @@ const navTabs = computed(() => [
     path: '/',
   },
   {
-    name: 'Proizvodi',
-    path: '/proizvodi',
+    name: 'Smart home',
+    path: '/smart-home',
   },
   {
-    name: 'Galerija',
-    path: '/galerija',
+    name: 'Solarni paneli',
+    path: '/solarni-paneli',
   },
   {
-    name: 'O nama',
-    path: '/o-nama',
+    name: 'Video nadzor',
+    path: '/video-nadzor',
+  },
+  {
+    name: 'Alarmni sistemi',
+    path: '/alarmni-sistemi',
+  },
+  {
+    name: 'Kontrola pristupa',
+    path: '/kontrola-pristupa',
+  },
+  {
+    name: 'Elektro instalacije',
+    path: '/elektro-instalacije',
   },
 ]);
 
