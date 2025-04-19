@@ -1,14 +1,14 @@
 <template>
   <main class="home-page bg-white">
-    <section class="hp-cover w-full md:h-screen flex items-center justify-center flex-col bg-scroll md:bg-fixed bg-brand-black relative px-3 pt-40 pb-20">
+    <section class="hp-cover w-full md:h-screen min-h-fit flex items-center justify-center flex-col bg-scroll md:bg-fixed bg-brand-black relative px-3 pt-24 sm:pt-40 pb-20">
       <h1 class="text-white text-center"><span class="block mb-2 text-[1.5em]">Smart home - solarni paneli</span> video nadzor - alarmni sistemi - elektricne instalacije</h1>
       <h2>Ugradnja i odrzavanje</h2>
-      <h3 class="mt-5 text-white uppercase mb-3">Delmont 014</h3>
-      <div class="flex flex-wrap gap-3 justify-center items-center py-3 px-3">
+      <h3 class="mt-2 sm:mt-5 text-white uppercase mb-2">Delmont 014</h3>
+      <div class="flex flex-wrap gap-3 justify-center items-center py-3">
         <a href="tel:+381631871034" class="btn-1 !m-0">Pozovi</a>
         <a href="/#kontakt" class="btn-1 !m-0">Posalji poruku</a>
       </div>
-      <div class="flex flex-wrap gap-3 justify-center items-center px-3">
+      <div class="flex flex-wrap gap-3 justify-center items-center">
         <NuxtLink to="/smart-home" class="btn-1 !m-0" active-class="" exact-active-class="">Smart home</NuxtLink>
         <NuxtLink to="/solarni-paneli" class="btn-1 !m-0" active-class="" exact-active-class="">Solarni paneli</NuxtLink>
         <NuxtLink to="/video-nadzor" class="btn-1 !m-0" active-class="" exact-active-class="">Video nadzor</NuxtLink>

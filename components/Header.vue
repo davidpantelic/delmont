@@ -4,7 +4,7 @@
     <nav :class="[isScrolling ? 'py-4' : 'py-5']" class="bg-brand-black text-white fixed top-0 w-full flex justify-end pl-2 md:pl-4 lg:pl-6 pr-2 z-50">
 
       <button @click="homepageTop" class="absolute h-24 sm:h-32 top-2 left-3 hover:scale-105 z-10 transition-all">
-        <NuxtImg src="/logo_small_trans_delmont.png" alt="Delmont 014" :class="[isScrolling ? 'scale-90' : 'scale-100']" class="inline mr-3 transition-all h-28 sm:h-32 origin-top" />
+        <NuxtImg src="/logo_small_trans_delmont.png" alt="Delmont 014" :class="[isScrolling ? 'scale-90' : 'scale-100']" class="inline mr-3 transition-all h-20 sm:h-32 origin-top" />
       </button>
 
       <ul class="nav-tabs items-center gap-3 xl:gap-5 hidden lg:flex mr-3">

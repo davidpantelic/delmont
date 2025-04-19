@@ -30,7 +30,7 @@ li::marker {
 }
 
 h1 {
-  @apply text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold;
+  @apply text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold;
 }
 
 h2 {
@@ -51,7 +51,7 @@ a {
 }
 
 [class^="btn-"] {
-  @apply py-2 px-8 rounded transition-all duration-300 border-2 text-xl inline-block;
+  @apply py-1 sm:py-2 px-4 sm:px-8 rounded transition-all duration-300 border-2 text-xl inline-block;
 }
 
 .btn-1 {
