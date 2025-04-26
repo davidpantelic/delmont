@@ -8,12 +8,18 @@
 
 <script setup>
 const socIcons = computed(() => [
-  // {
-  //   name: 'ic:baseline-facebook',
-  //   path: 'https://www.facebook.com/delmont014/',
-  //   target: '_blank',
-  //   text: 'Facebook stranica'
-  // },
+  {
+    name: 'ic:baseline-facebook',
+    path: 'https://www.facebook.com/profile.php?id=61575763430766',
+    target: '_blank',
+    text: 'Facebook stranica'
+  },
+  {
+    name: 'iconoir:instagram',
+    path: 'https://www.instagram.com/delmont014/',
+    target: '_blank',
+    text: 'Instagram stranica'
+  },
   {
     name: 'ic:outline-email',
     path: 'mailto:info@delmont014.rs',
